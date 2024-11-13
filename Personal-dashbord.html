@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-
+    scale=1, minimum-scale=1">
+    <title>Personal Dashboard-NINaccess</title>
+    <link rel="shortcut icon" href="dashboard">
+    <link rel="stylesheet" href="my-dashboard.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+  <input type="checkbox" name="" id="sidebar-toggle">
+
+    <div class="side-bar">
+
+        <div class="side-bar-brand">
+            <div class="brand-flex">
+                <i class='bx bxs-dashboard'></i>
+                <div class="brand-icons">
+                    <span class='bx bxs-bell'></span>
+                    <span class='bx bxs-user-circle'></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="side-bar-main">
+            <div class="side-bar-user">
+                <img src="user-photo.png" id="profile-pic">
+                <label for="add-photo">Add image</label>
+                <input type="file" accept="image/jpeg, image/png, image/jpg" id="add-photo">
+                <div>
+                    <h3> Username </h3>
+                    <span>Active email</span>
+                </div>
+            </div>
+            
+            <div class="side-bar-menu">
+                <div class="menu-head">
+                     <span> Dashboard</span>
+                </div>
+                <ul>
+                    <li>
+                        <a href="">
+                            <span class='bx bxs-contact'></span>Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class=" bx bx-envelope"></span>Mailbox
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="bx bx-calendar"></span>Calender
+                        </a>
+                    </li>
+                    
+                </ul>
+
+                <div class="menu-head">
+                    <span> Files Update</span>
+               </div>
+               <ul>
+                    <li>
+                        <a href="">
+                            <span class="bx bx-folder"></span>Files
+                        </a>
+                    </li>
+                   <li>
+                       <a href="">
+                           <span class=" bx bx-cog"></span>Settings
+                       </a>
+                   </li>
+               </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="header-icon">
+                <span class="bx bx-calendar"></span>
+            </div>
+
+            <div class="search-box">
+                <a href="#"><span class="bx bx-search" id="before"></span></a>
+                <input type="text" placeholder="search here...">
+            </div>
+            <div class="menu-toggle">
+                <label for="sidebar-toggle">
+                    <span class="bx bx-menu"></span>
+                </label>
+            </div>
+        </header>
+
+        <main>
+            <div class="page-header">
+                <div>
+                    <h1>Records Dashboard</h1>
+                    <small>Monitor key metrics. Upload, create, save and retrieve files </small>
+                </div>
+
+                <div class="header-actions">
+                    <button>
+                        <span class="bx bx-cog"></span>Settings
+                    </button>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card-single">
+                    <div class="card-flex">
+                        <div class="card-info">
+                            <div class="card-head">
+                                <a href="upload-record.html">
+                                    <img src="upload-folder.png" alt="" class="upload-folder">
+                                    <button type="button" id="folder-btn"> Upload Records</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div class="card-flex">
+                        <div class="card-info">
+                            <div class="card-head">
+                                <a href="#">
+                                    <img src="folder.png" alt="" class="folder">
+                                    <button type="button" id="folder-btn">Folders</button>
+                                </a>   
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="card-single">
+                    <div class="card-flex">
+                        <div class="card-info">
+                            <div class="card-head">
+                                <a href="#">
+                                    <img src="All-folders.png" alt="" class="all-folders">
+                                    <button type="button" id="folder-btn">Access Records</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="card-single">
+                    <div class="card-flex">
+                        <div class="card-info">
+                            <div class="card-head">
+                                <a href="#">
+                                    <img src="search-folder1.png" alt="" class="search-folder">
+                                    <button type="button" id="folder-btn1">Retrieve file</button>
+                                </a> 
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                
+            </div>
+
+           <!-- <div class="history-grid">
+                <div class="analytics-card">
+
+                    <div class="analytics-head">
+                        <h2>Actions needed</h2>
+                        <span class="bx bx-ellip">...</span>
+                    </div>
+
+                    <div class="analytics-chart">
+                        <div class="chart-circle">
+                            <h1>74%</h1>
+                        </div>
+
+                        <div class="analytics-note">
+                            <small>Note: Current sprint requires stakeholders meeting 
+                                to reach conclusion</small>
+                        </div>
+                    </div>
+
+                    <div class="analytics-btn">
+                        <button>Generate report</button>
+                    </div>
+                </div> -->
+
+                <div class="history"> 
+                    <h2>History</h2>
+                    <div class="historyTop">
+                        <div class="">
+                            <a href="#">
+                                <button id="historyArrow">
+                                    <span class="bx bx-left-arrow"></span> Previous
+                                </button>
+                            </a>
+                            <a href="#">
+                                <button id="historyArrow">
+                                    Next  <span class="bx bx-right-arrow" ></span>
+                                </button> 
+                            </a>
+                           
+                        </div>
+                        
+                        <button class="icon" id="arrow" onclick="toggleTable(); toggleIcon()">
+                            see all <i  class="bx bx-right-arrow"></i>
+                        </button> 
+                    </div>
+
+                    <table id="table-container" class="hidden" width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <span class="indicator"></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        Marcus Grace Irebami
+                                    </div> 
+                                </td>
+                                <td>
+                                    <div>
+                                       COIT374IR0004W2
+                                    </div> 
+                                </td>
+                                <td>
+                                    <div>
+                                    ER
+                                    </div> 
+                                </td>
+                                <td>
+                                    <div>
+                                       08028630024
+                                    </div> 
+                                </td>
+                                <td>
+                                    <div>
+                                       mickyrez26@gmail.com
+                                    </div> 
+                                </td>
+                                <td>
+                                    <div>
+                                       LAGOS
+                                    </div> 
+                                </td>
+                                <td>
+                                    <div>
+                                        <button> NGN 7,000</button>
+                                    </div>
+                                </td>
+                            </tr> 
+                            
+                            <tr>
+                                <td>
+                                    <div>
+                                        <span class="indicator"></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        Marcus Grace Irebami 
+                                    </div> 
+                                </td>
+                                <td>
+                                    <div>
+                                        COIT374IR0004W2
+                                    </div> 
+                                </td>
+                                <td>
+                                    <div>
+                                        ER
+                                    </div> 
+                                </td>
+                                <td>
+                                    <div>
+                                        08028630024
+                                    </div> 
+                                </td>
+                               
+                                <td>
+                                    <div>
+                                        mickyrez26@gmail.com
+                                    </div> 
+                                </td>
+                                <td>
+                                    <div>
+                                        LAGOS
+                                    </div> 
+                                </td>
+                                <td>
+                                    <div>
+                                        <button>NGN 7,000</button>
+                                    </div>
+                                </td>
+                            </tr> 
+                           
+                            <tr>
+                                <td>
+                                    <div>
+                                        <span class="indicator even"></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                       Marcus Grace Irebami
+                                    </div> 
+                                </td>
+                                <td>
+                                   <div>
+                                    COIT374IR0004W2
+                                   </div> 
+                                </td>
+                                <td>
+                                   <div>
+                                       ER
+                                   </div>
+                                </td>
+                                <td>
+                                    <div>
+                                       08028630024
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                      mickyrez26@gmail.com
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                     LAGOS
+                                    </div>
+                                </td>
+                                <td>
+                                   <div>
+                                     <button>NGN 7,000</button>
+                                   </div> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <span class="indicator even"></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                       Marcus Grace Irebami
+                                    </div> 
+                                </td>
+                                <td>
+                                   <div>
+                                    COIT374IR0004W2
+                                   </div> 
+                                </td>
+                                <td>
+                                   <div>
+                                       ER
+                                   </div>
+                                </td>
+                                <td>
+                                    <div>
+                                       08028630024
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                      mickyrez26@gmail.com
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                     LAGOS
+                                    </div>
+                                </td>
+                                <td>
+                                   <div>
+                                     <button>NGN 7,000</button>
+                                   </div> 
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+     
+    <script src="personal-dashboard.js"></script>
+</body>
+</html>
