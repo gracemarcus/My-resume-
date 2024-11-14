@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body{
+            box-sizing: border-box;
+            background-color: #d4af37;
+        }
+        .back {
+            font-size: large;
+            font-weight: 900;
+        }
+        .FORM {
+            margin: 20px;
+            padding: 10px;
+            width: 80%;
+            height: 100%;
+        }
+        .FORM h2 {
+            text-align: center;
+            color: #173659;
+        }
+        .email {
+            margin: auto;
+            max-width: 100%;
+        }
+        .name {
+            font-family: garamond;
+            font-weight: bold;
+            font-size: 20px;
+            color: #173659;
+        }
+        .details input {
+            position: relative;
+            right: 4px;
+            bottom: 2px; 
+            width: 70%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: 15px;
+            outline: none;
+            border: none;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background: #ddd;
+        }
+       .details input:focus{
+        background: white;
+        border-bottom: 3px solid #173659;
+       }
+       .details > i{
+        min-width: 5%;
+        padding: 15px;
+        text-align:center;
+        background: #173659;
+        border-top-left-radius:10px;
+        border-bottom-left-radius: 10px;
+        color:whitesmoke;
+    }
+    .eye {
+        position: relative;
+        right: 50px;
+        bottom: 2px;
+        color: #aaa;
+        padding: 13px;
+        padding-bottom: 15px;
+        background: #ddd;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom: 3px solid #173659;    
+    }
+    a {
+        text-decoration: none;
+        color: green;
+    }
+    button{
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        padding: 15px;
+        background: #173659;
+        color: white;
+    }     
+
+    /* media  quarry */
+    @media only screen and (max-width: 480px){
+        .details > i{
+            position: relative;
+            top: 30px;
+            min-width:10%;
+            padding: 15px;
+            text-align:center;
+            background: #173659;
+            border-top-left-radius:10px;
+            border-bottom-left-radius: 10px;
+            color:whitesmoke;
+        }
+         .details input {
+            position: relative;
+            left: 55px;
+            bottom: 31px; 
+            width: 70%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: 16px;
+            outline: none;
+            border: none;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background: #ddd;    
+        }
+        .eye {
+            position: relative;
+            left: 10px;
+            bottom: 32px;
+            color: #aaa;
+            padding: 13px;
+            padding-bottom: 17px;
+            background: #ddd;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom: 3px solid #173659;    
+        } 
+    }
+     
+
+    </style>
+</head>
+<body>
+    <a class="back" href="#"><i class='bx bx-chevron-left'></i></a>
+    <form class="FORM">
+        <div class="email">
+            <h2>Email & Password</h2>
+            <p>Open MIGO bank account with a few details. Your password must have atleast 8 characters including numbers and letters.</p>
+            <div class="details">
+                <span class="name"> Email Address</span> <br>
+                <i class='bx bx-mail-send' ></i>
+                <input type="text" name="address" placeholder="now@email.com" checked="checked" required>  
+            </div>
+            <div class="details">
+                <span class="name">Enter Password</span> <br>
+                <i class='bx bxs-lock-alt'></i>
+                <input type="password" name="pword" id="show" placeholder="* * * * * * * *"  checked="checked" required>
+                <span class="eye"><i onclick="myfunction()" class='bx bx-low-vision'></i></span>
+            </div>
+            <div class="details">
+                <span class="name">Confirm Password</span> <br>
+                <i class='bx bxs-lock-alt'></i>
+                <input type="password" name="confirm" id="show1" placeholder="* * * * * * * *" checked="checked" required>
+                <span class="eye"><i onclick="myfunction1()" class='bx bx-low-vision'></i></span>
+            </div> 
+            <p> By clicking "Next", you agree to our <a href="#">Terms & conditions and Private Policy.</a> </p>
+            <div>
+            <button id="next">Next </button>
+            
+        </div>
+        
+    </form>
+    <script>
+       function myfunction (){
+        var x =
+        document.getElementById("show");
+            if (x.type == "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+       }
+       function myfunction1 (){
+        var x =
+        document.getElementById("show1");
+            if (x.type == "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+       }
+    
+    </script>
+</body>
+</html>
